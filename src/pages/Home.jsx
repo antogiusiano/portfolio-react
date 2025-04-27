@@ -8,9 +8,9 @@ const Home = () => {
     let Alumno = {
         nombre:"Antonella",
         apellido:"Giusiano",
-        descripcion:"estudiante de Programacion de la UTN-FRT",
-        lenguajes:"C#,Python,Javascript",
-        mascotas:"Marley,Uma,Luli,Milo"
+        descripcion:"Estudiante de Programacion UTN-FRT",
+        lenguajes:"C# - Python - Javascript",
+        imagen:"../public/WhatsApp Image 2025-04-27 at 01.31.14.jpeg"
     };
 
     return (

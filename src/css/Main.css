@@ -1,0 +1,92 @@
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px; 
+  margin: 20px auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%; /* Hace que la sección ocupe el 100% del ancho de la card */
+  background: #EEAECA;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/* Estilos para la imagen de perfil */
+.section-header img {
+  width: 150px; 
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+
+.section-header img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar profundidad */
+}
+
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-body {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  background: #fcd3e5;/* Hace que la sección ocupe el 100% del ancho de la card */
+}
+
+/* Estilos para la sección de lenguajes */
+.lenguajes {
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que los iconos y texto se acomoden en múltiples filas si es necesario */
+  justify-content: center; /* Centra los elementos */
+  gap: 20px; /* Aumenta el espacio entre los iconos y los textos */
+  margin-top: 20px; /* Aumenta el margen superior */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.lenguajes img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px; /* Redondeamos un poco las esquinas de los iconos */
+  transition: transform 0.3s ease-in-out; /* Añadimos un pequeño efecto de transición */
+}
+
+/* Efecto al pasar el ratón por encima de los iconos */
+.lenguajes img:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del icono cuando se pasa el ratón */
+}
+
+.lenguajes h2 {
+  font-size: 1.1rem;
+  color: #555; /* Un gris más suave para el texto */
+  font-weight: 500; /* Peso de fuente más ligero */
+  margin-top: 8px; /* Separación entre el icono y el texto */
+  text-transform: capitalize; /* Hace que la primera letra de cada palabra esté en mayúscula */
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover para el texto */
+.lenguajes h2:hover {
+  color: #8a0648; /* Cambia el color del texto cuando se pasa el ratón */
+}
