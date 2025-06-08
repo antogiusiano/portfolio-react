@@ -1,0 +1,5 @@
+export const home = "/"
+export const aboutMe = "/aboutMe"
+export const contact = "/contact"
+export const projects = "/projects"
+export const error="*"

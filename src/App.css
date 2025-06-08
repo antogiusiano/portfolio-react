@@ -4,3 +4,26 @@ body {
   rgba(255,255,255,.5) 50%);
     background-size: 50px 50px;
 }
+
+.app-container.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.app-container.dark {
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+/* Ajustar estilos específicos */
+.dark .custom-navbar {
+  background-color: #333 !important;
+}
+
+.dark .nav-link {
+  color: #f59bfd !important;
+}
+
+.dark .theme-toggle {
+  color: #f59bfd;
+}

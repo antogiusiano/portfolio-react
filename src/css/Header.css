@@ -1,8 +1,19 @@
 .header {
-    background-color: #4f5372;
-    color: white;
     text-align: center;
     padding: 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Modo claro */
+.light .header {
+    background-color: #4f5372;
+    color: white;
+}
+
+/* Modo oscuro */
+.dark .header {
+    background-color: #222;
+    color: #f1f1f1;
 }
 
 .header h1 {
@@ -14,4 +25,10 @@
     width: 50%;
     margin: 10px auto;
     border: 1px solid white;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Cambio de color en modo oscuro */
+.dark .header hr {
+    border-color: #f59bfd;
 }

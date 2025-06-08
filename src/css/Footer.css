@@ -1,41 +1,58 @@
-/* src/css/Footer.css */
-
 .footer {
-  background-color: #4f5372;
-  color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 0;
   position: relative;
   bottom: 0;
   width: 100%;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Modo claro */
+.light .footer {
+  background: linear-gradient(to right, #4f5372, #6b6f92);
+  color: white;
+}
+
+/* Modo oscuro */
+.dark .footer {
+  background: linear-gradient(to right, #222, #333);
+  color: #f1f1f1;
+}
+
+/* Ajustes en títulos */
 .footer h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #fff;
+  transition: color 0.3s ease-in-out;
 }
 
+/* Cambia color en modo oscuro */
+.dark .footer h3 {
+  color: #f59bfd;
+}
+
+/* Iconos sociales */
 .footer a {
   margin: 0 15px;
   display: inline-block;
 }
 
+/* Estilos de los iconos */
 .footer img {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 50%; /* Redondea los iconos */
+  border-radius: 50%;
 }
 
-/* Efecto hover para los iconos */
+/* Efecto hover: iluminación y rotación */
 .footer a:hover img {
-  transform: scale(1.1) rotate(360deg); /* Añadido el efecto de rotación */
-  filter: brightness(1.2); /* Hace que el icono se ilumine al pasar el ratón */
+  transform: scale(1.1) rotate(360deg);
+  filter: brightness(1.2);
 }
 
-/* Efecto de enfoque al hacer clic */
-.footer a:focus img {
-  outline: none; /* Elimina el borde de enfoque */
+/* Ajuste en modo oscuro: reducir brillo */
+.dark .footer a img {
+  filter: brightness(0.8);
 }

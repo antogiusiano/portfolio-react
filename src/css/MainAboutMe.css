@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Tarjeta de presentación */
+.card {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    width: 40%;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Modo claro */
+.light .card {
+    background: linear-gradient(to right, #fcd3e5, #EEAECA);
+    color: #333;
+}
+
+/* Modo oscuro */
+.dark .card {
+    background: linear-gradient(to right, #222, #444);
+    color: #f1f1f1;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #8a0648;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos en modo oscuro */
+.dark .profile-image {
+    border-color: #f59bfd;
+}
+
+/* Efecto hover en la imagen */
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor de presentación */
+.presentation {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+    width: 50%;
+    text-align: left;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Modo claro */
+.light .presentation {
+    background: white;
+    color: #333;
+}
+
+/* Modo oscuro */
+.dark .presentation {
+    background: #222;
+    color: #f1f1f1;
+}
+
+/* Animaciones de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
